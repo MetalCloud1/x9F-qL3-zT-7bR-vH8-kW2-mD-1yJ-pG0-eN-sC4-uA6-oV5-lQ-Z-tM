@@ -1,0 +1,201 @@
+{
+  "generated_at": "2025-10-30T15:00:00Z",
+  "version": "1.0",
+  "notes": "Índice maestro jerárquico generado automáticamente. Los campos 'sha256' y 'size' deben rellenarse por el publicador para verificación. Este archivo puede ubicarse en la raíz del repo; el cliente también intenta /<osSlug>/index-maestro.json como fallback.",
+  "capabilities": [
+    {
+      "type": "group",
+      "name": "linux-amd64",
+      "entries": [
+        {
+          "type": "group",
+          "name": "dockerfile",
+          "entries": [
+            {
+              "type": "archive",
+              "name": "hadolint",
+              "path": "linux-amd64/dockerfile/module-hadolint.zip",
+              "size": 0,
+              "sha256": "9b34ba4eb3b869ad15d1544c9876ca96630dbad8fda2eda9f3a8dab00ac30578"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "go",
+          "entries": [
+            {
+              "type": "group",
+              "name": "go-lint",
+              "entries": [
+                {
+                  "type": "archive",
+                  "name": "golangci_lint",
+                  "path": "linux-amd64/go/go-lint/module-golangci_lint.zip",
+                  "size": 0,
+                  "sha256": "0e1fb211d783289a81074fca29fb2b4a83b75c718ddc164da347d37670092f5d"
+                },
+                {
+                  "type": "archive",
+                  "name": "staticcheck",
+                  "path": "linux-amd64/go/go-lint/module-staticcheck.zip",
+                  "size": 0,
+                  "sha256": "b14868dd72a35b54f5daccc84797f7d398c2f6a056b8415d1f14d4c01571610d"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "go-security",
+              "entries": [
+                {
+                  "type": "archive",
+                  "name": "gosec",
+                  "path": "linux-amd64/go/go-security/module-gosec.zip",
+                  "size": 0,
+                  "sha256": "efd0a64e62e6a6f886eec24835b2625e5802240afeb2c92b152397513a7526dc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "iac",
+          "entries": [
+            {
+              "type": "archive",
+              "name": "checkov",
+              "path": "linux-amd64/iac/module-checkov.zip",
+              "size": 0,
+              "sha256": "b9fae733cbea6913e760ee8e73f6609a3c5596901f9e19915e19855281575672"
+            },
+            {
+              "type": "archive",
+              "name": "trivy-iac",
+              "path": "linux-amd64/iac/module-trivy-iac.zip",
+              "size": 0,
+              "sha256": "28883067720c5a4e397704e3ec57bbd9c8c6235affe4e4483eb210117915ee57"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "image-dependencies",
+          "entries": [
+            {
+              "type": "archive",
+              "name": "dockle",
+              "path": "linux-amd64/image-dependencies/module-dockle.zip",
+              "size": 0,
+              "sha256": "93c406c362311d85f4985deca97e85f5ab272345ba32cbf20e07026062a48006"
+            },
+            {
+              "type": "archive",
+              "name": "grype",
+              "path": "linux-amd64/image-dependencies/module-grype.zip",
+              "size": 0,
+              "sha256": "720cd7eb6dfed44df76dab2e2ac383831fff9770ef76a6b36bddb21650631613"
+            },
+            {
+              "type": "archive",
+              "name": "trivy-img",
+              "path": "linux-amd64/image-dependencies/module-trivy-img.zip",
+              "size": 0,
+              "sha256": "c61e1e010e6e51eab4256d3c25dfcbb893912b0cf09b5011396fb04724fb62ec"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "k8s",
+          "entries": [
+            {
+              "type": "group",
+              "name": "k8s-evaluation",
+              "entries": [
+                {
+                  "type": "archive",
+                  "name": "kubescore",
+                  "path": "linux-amd64/k8s/k8s-evaluation/module-kubescore.zip",
+                  "size": 0,
+                  "sha256": "8149f67ce7c124007c23a6139b0a5843be17ea603b73adc9bf57d57edf731fc4"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "k8s-linting",
+              "entries": [
+                {
+                  "type": "archive",
+                  "name": "kubelinter",
+                  "path": "linux-amd64/k8s/k8s-linting/module-kubelinter.zip",
+                  "size": 0,
+                  "sha256": "5d809153fd419345f525de8316aded7e577c0da80c7598cfcf1b575c5e3d66cb"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "k8s-vulnerabilities",
+              "entries": [
+                {
+                  "type": "archive",
+                  "name": "kubescape",
+                  "path": "linux-amd64/k8s/k8s-vulnerabilities/module-kubescape.zip",
+                  "size": 0,
+                  "sha256": "93530b461edf28b1294223838d28ed0776e2dbc174f8382846619107803caa63"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "malware-patterns",
+          "entries": [
+            {
+              "type": "archive",
+              "name": "yara",
+              "path": "linux-amd64/malware-patterns/module-yara.zip",
+              "size": 0,
+              "sha256": "297c2e27c8d8389baab105a71b7d657a7f84e537e773b325f8f02fa8ab6c7b4b"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "sbom",
+          "entries": [
+            {
+              "type": "archive",
+              "name": "syft",
+              "path": "linux-amd64/sbom/module-syft.zip",
+              "size": 0,
+              "sha256": "43f1eaf1a4677ba6597e088ae0c1b74e857177837d113d4385f41400b64d0219"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "secret-detection",
+          "entries": [
+            {
+              "type": "archive",
+              "name": "gitleaks",
+              "path": "linux-amd64/secret-detection/module-gitleaks.zip",
+              "size": 0,
+              "sha256": "8310ea04a8c1be5a22e1a50677ae680eb43c1e15e40f3b1943a1c7b544f0ef1f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "windows-amd64",
+      "entries": []
+    }
+  ]
+}

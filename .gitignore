@@ -1,0 +1,7 @@
+**.key
+**.pub
+**.txt
+**.sigbundle
+**/module_packager/
+**/Makefile
+**.ps1
